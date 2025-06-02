@@ -11,19 +11,25 @@ export default function Home() {
     <>
       <main className="bg-[#f9f8f8] text-[#373636]">
         <Navbar />
-        <section className="min-h-[calc(100vh-4.5rem)] flex flex-col items-left justify-center pr-6 pl-6 border-b border-[#373636] border-opacity-60 font-space">
-          <h1 className="text-[3rem]">Front-End Developer</h1>
-          <p className="w-[50%] text-[1.25rem]">
+        <section
+          id="section-home"
+          className="min-h-[calc(100vh-4.5rem)] flex flex-col items-left justify-center pr-6 pl-6 border-b border-[#373636] border-opacity-60 font-space"
+        >
+          <h1 className="text-[3rem] mb-8">Front-End Developer</h1>
+          <p className="md:w-[50%] w-[100%] text-[1.25rem]">
             I build interactive, aesthetic, and performant web experiences —
             combining a designer’s eye with an engineer’s mind.
           </p>
         </section>
-        <section className="min-h-[100vh] flex flex-row items-center justify-center gap-20 pr-6 pl-6 border-b border-[#373636] border-opacity-60 font-space">
+        <section
+          id="section-about"
+          className="min-h-[100vh] flex flex-col md:flex-row items-center justify-center gap-8 md:gap-20 pr-6 pl-6 py-16 border-b border-[#373636] border-opacity-60 font-space"
+        >
           <div className="photo-side">
             <Image
               src="/images/Rectangle-7.png"
               alt="profile-pic"
-              className="w-[60rem] h-auto object-cover"
+              className="w-[60rem] md:w-[120rem] lg:w-[60rem] h-auto object-cover"
               width={0}
               height={0}
               sizes="100vw"
@@ -57,64 +63,132 @@ export default function Home() {
               </ul>
             </div>
             <ul className="flex flex-row w-[20] justify-between mt-8">
-              <li className="flex flex-row items-center gap-1">
+              <a
+                href="https://github.com/nazozkann"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex flex-row items-center gap-1"
+              >
                 GitHub
                 <span>
                   <BsArrowUpRight />
                 </span>
-              </li>
-              <li className="flex flex-row items-center gap-1">
+              </a>
+              <a
+                href="https://www.linkedin.com/in/naz-ozkan-7064b6215/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex flex-row items-center gap-1"
+              >
                 Linkedin
                 <span>
                   <BsArrowUpRight />
                 </span>
-              </li>
-              <li className="flex flex-row items-center gap-1">
+              </a>
+              <a
+                href="mailto:nazozkan9977@gmail.com?subject=Konu&body=Merhaba%20Naz,"
+                className="flex flex-row items-center gap-1"
+              >
                 Mail
                 <span>
                   <BsArrowUpRight />
                 </span>
-              </li>
+              </a>
             </ul>
           </div>
         </section>
-        <section className="min-h-[100vh] flex flex-col gap-16 pr-6 pl-6 py-32 border-b border-[#373636] border-opacity-60 font-space">
+        <section
+          id="section-projects"
+          className="min-h-[100vh] flex flex-col gap-16 pr-6 pl-6 py-32 border-b border-[#373636] border-opacity-60 font-space"
+        >
           <h2 className="text-[2rem]">Projects</h2>
-          <div className="noirline flex flex-row gap-40 items-center">
+          <div className="noirline flex flex-col lg:flex-row justify-between gap-20 md:gap-40 items-center">
             <div className="info-area">
-              <h3 className="text-[1.5rem] mb-16">NOIRline</h3>
+              <div className="project-header mb-16 flex flex-row items-end gap-12">
+                <h3 className="text-[1.5rem]">NOIRline</h3>
+                <div className="links flex flex-row gap-6">
+                  <a
+                    href="https://noirline-site.vercel.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-[#373636] flex items-center gap-1"
+                  >
+                    Live
+                    <span>
+                      <BsArrowUpRight />
+                    </span>
+                  </a>
+                  <a
+                    href="https://github.com/nazozkann/noirline-site"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-[#373636] flex items-center gap-1"
+                  >
+                    GitHub
+                    <span>
+                      <BsArrowUpRight />
+                    </span>
+                  </a>
+                </div>
+              </div>
               <p>
                 NOIRline is a concept-driven digital fashion collection that
                 blends urban identity with interactive web design.
               </p>
-              <ul className="flex flex-row gap-8 mt-4">
+              <ul className="flex flex-row flex-wrap sm:flex-row gap-4 mt-4">
                 <li className="border px-4 py-2">React</li>
                 <li className="border px-4 py-2">TypeScript</li>
                 <li className="border px-4 py-2">TailwindCSS</li>
                 <li className="border px-4 py-2">Next.js</li>
               </ul>
             </div>
-            <div className="video-area">
+            <div className="video-area w-full flex justify-center lg:justify-end">
               <video
                 src="/videos/noirline-recording.mp4"
                 controls
-                className="max-w-[40rem] border-none outline-none"
-                autoPlay={true}
+                className="w-full max-w-[40rem] border-none outline-none"
+                autoPlay
                 loop
                 muted
               />
             </div>
           </div>
-          <div className="explora flex flex-row gap-40 items-center">
+          <div className="explora flex flex-col lg:flex-row justify-between gap-20 md:gap-40 items-center">
             <div className="info-area ">
-              <h3 className="text-[1.5rem] mb-8">Explora</h3>
+              <div className="project-header mb-16 flex flex-row items-end gap-12">
+                <h3 className="text-[1.5rem]">Explora</h3>
+                <div className="links flex flex-row gap-6">
+                  <a
+                    href="https://exploratravel.netlify.app"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-[#373636] flex items-center gap-1"
+                  >
+                    Live
+                    <span>
+                      <BsArrowUpRight />
+                    </span>
+                  </a>
+                  <a
+                    href="https://github.com/nazozkann/travel-map-app"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-[#373636] flex items-center gap-1"
+                  >
+                    GitHub
+                    <span>
+                      <BsArrowUpRight />
+                    </span>
+                  </a>
+                </div>
+              </div>
               <p>
                 Explora is a full-stack travel platform where users share
                 authentic location-based recommendations on an interactive map.
                 Built from scratch using the MERN stack and map APIs, it enables
                 community-driven discovery.
               </p>
-              <ul className="flex flex-row gap-8 mt-4">
+              <ul className="flex flex-row flex-wrap sm:flex-row gap-4 mt-4">
                 <li className="border px-4 py-2">React</li>
                 <li className="border px-4 py-2">JavaScript</li>
                 <li className="border px-4 py-2">Node.js</li>
@@ -122,11 +196,11 @@ export default function Home() {
                 <li className="border px-4 py-2">Mongo DB</li>
               </ul>
             </div>
-            <div className="video-area">
+            <div className="video-area w-full flex justify-center lg:justify-end">
               <video
                 src="/videos/explora-video.mp4"
                 controls
-                className="max-w-[40rem] border-none outline-none"
+                className="w-full max-w-[40rem] border-none outline-none"
                 autoPlay={true}
                 loop
                 muted
@@ -134,25 +208,60 @@ export default function Home() {
             </div>
           </div>
           <h2 className="text-[2rem] mt-24">Works</h2>
-          <div className="bubiwear flex flex-row gap-40 items-center">
+          <div className="bubiwear flex flex-col lg:flex-row justify-between gap-20 md:gap-40 items-center">
             <div className="info-area">
-              <h3 className="text-[1.5rem] mb-8">BubiWear</h3>
+              <div className="project-header mb-16 flex flex-row items-end gap-12">
+                <h3 className="text-[1.5rem]">BubiWear</h3>
+                <div className="links flex flex-row gap-6">
+                  <a
+                    href="https://bubiwear.onrender.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-[#373636] flex items-center gap-1"
+                  >
+                    Test-Live
+                    <span>
+                      <BsArrowUpRight />
+                    </span>
+                  </a>
+                  <a
+                    href="https://github.com/nazozkann/bubitest"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-[#373636] flex items-center gap-1"
+                  >
+                    GitHub
+                    <span>
+                      <BsArrowUpRight />
+                    </span>
+                  </a>
+                </div>
+              </div>
               <p>
                 BubiWear is a custom-designed e-commerce platform for showcasing
                 and selling streetwear products. Developed with modern front-end
                 technologies and a scalable backend to manage products, orders,
                 and users efficiently.
               </p>
-              <ul className="flex flex-row gap-8 mt-4">
+              <ul className="flex flex-row flex-wrap sm:flex-row gap-4 mt-4">
                 <li className="border px-4 py-2">JavaScript</li>
                 <li className="border px-4 py-2">Node.js</li>
                 <li className="border px-4 py-2">Express.js</li>
                 <li className="border px-4 py-2">Mongo DB</li>
               </ul>
             </div>
-            <div className="video-area"></div>
+            <div className="video-area w-full flex justify-center lg:justify-end">
+              <video
+                src="/videos/bubiwear-video.mp4"
+                controls
+                className="w-full max-w-[40rem] border-none outline-none"
+                autoPlay={true}
+                loop
+                muted
+              />
+            </div>
           </div>
-          <div className="mgdesign flex flex-row gap-40 items-center">
+          <div className="mgdesign flex flex-col lg:flex-row justify-between gap-20 md:gap-40 items-center">
             <div className="info-area">
               <h3 className="text-[1.5rem] mb-8">mgdesign</h3>
               <p>
@@ -161,18 +270,18 @@ export default function Home() {
                 highlights their approach to aesthetics, innovation, and
                 storytelling through curated visuals and content.
               </p>
-              <ul className="flex flex-row gap-8 mt-4">
+              <ul className="flex flex-row flex-wrap sm:flex-row gap-4 mt-4">
                 <li className="border px-4 py-2">JavaScript</li>
                 <li className="border px-4 py-2">CSS</li>
                 <li className="border px-4 py-2">HTML</li>
               </ul>
             </div>
-            <div className="video-area">
+            <div className="video-area w-full flex justify-end">
               <div>
                 <Image
                   src="/images/mg-design.png"
                   alt="mgdesign"
-                  className="max-w-[40rem] border-none outline-none"
+                  className="w-full max-w-[40rem] border-none outline-none"
                   width={1000}
                   height={1000}
                   sizes="100vw"
@@ -181,8 +290,11 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section className="min-h-[100vh] flex flex-col gap-20 pr-6 pl-6 border-b border-[#373636] border-opacity-60 font-space">
-          <div className="tabs-section flex flex-row gap-20 mt-20 text-[2rem]">
+        <section
+          id="section-experience"
+          className="min-h-[100vh] flex flex-col gap-20 pr-6 pl-6 border-b border-[#373636] border-opacity-60 font-space"
+        >
+          <div className="tabs-section flex flex-row gap-8 md:gap-20 mt-20 text-[1.5rem] md:text-[2rem]">
             <h2
               className={`cursor-pointer transition ${
                 activeTab === "experience"
@@ -222,7 +334,7 @@ export default function Home() {
                 <p>Product Design Intern</p>
                 <p>2024 March - June</p>
                 <p className="opacity-60">
-                  In Sampler, worked on digital product design including
+                  In Sampler, worked on digital product designs including
                   websites and branding projects.In Hamm, created digital assets
                   for physical products — including 3D modeling, rendering, and
                   visualizations.
