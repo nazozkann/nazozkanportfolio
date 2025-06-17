@@ -15,7 +15,7 @@ export default function Home() {
           id="section-home"
           className="min-h-[calc(100vh-4.5rem)] flex flex-col items-left justify-center pr-6 pl-6 border-b border-[#373636] border-opacity-60 font-space"
         >
-          <h1 className="text-[3rem] mb-8">Front-End Developer</h1>
+          <h1 className="text-[3rem] mb-8">Full Stack Developer</h1>
           <p className="md:w-[50%] w-[100%] text-[1.25rem]">
             I build interactive, aesthetic, and performant web experiences —
             combining a designer’s eye with an engineer’s mind.
@@ -39,7 +39,7 @@ export default function Home() {
             <div className="personal-info">
               <h2 className="text-[2rem]">Naz Ozkan</h2>
               <p>
-                I’m a front-end developer with a product design background,
+                I’m a full stack developer with a product design background,
                 combining clean code with visual clarity. I thrive at the
                 intersection of design and engineering. Passionate about
                 learning, I constantly explore new technologies, tools, and
