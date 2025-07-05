@@ -207,6 +207,61 @@ export default function Home() {
               />
             </div>
           </div>
+          <div className="explora flex flex-col lg:flex-row justify-between gap-20 md:gap-40 items-center">
+            <div className="info-area ">
+              <div className="project-header mb-16 flex flex-row items-end gap-12">
+                <h3 className="text-[1.5rem]">Meteoly</h3>
+                <div className="links flex flex-row gap-6">
+                  <a
+                    href="https://meteloy.vercel.app/#/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-[#373636] flex items-center gap-1"
+                  >
+                    Live
+                    <span>
+                      <BsArrowUpRight />
+                    </span>
+                  </a>
+                  <a
+                    href="https://github.com/nazozkann/weather-app"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-[#373636] flex items-center gap-1"
+                  >
+                    GitHub
+                    <span>
+                      <BsArrowUpRight />
+                    </span>
+                  </a>
+                </div>
+              </div>
+              <p>
+                Meteoly is a modern web application that delivers real-time
+                weather information in a clean and user-friendly interface.
+                Built with React and JavaScript, the app allows users to search
+                for current weather conditions of any city, view detailed
+                forecasts, and experience responsive design across devices. This
+                project highlights my skills in frontend development, API
+                integration, and creating engaging user experiences.
+              </p>
+              <ul className="flex flex-row flex-wrap sm:flex-row gap-4 mt-4">
+                <li className="border px-4 py-2">React</li>
+                <li className="border px-4 py-2">JavaScript</li>
+                <li className="border px-4 py-2">TailwindCSS</li>
+              </ul>
+            </div>
+            <div className="video-area w-full flex justify-center lg:justify-end">
+              <video
+                src="/videos/meteoly-video.mp4"
+                controls
+                className="w-full max-w-[40rem] border-none outline-none"
+                autoPlay={true}
+                loop
+                muted
+              />
+            </div>
+          </div>
           <h2 className="text-[2rem] mt-24">Works</h2>
           <div className="bubiwear flex flex-col lg:flex-row justify-between gap-20 md:gap-40 items-center">
             <div className="info-area">
