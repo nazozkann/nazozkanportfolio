@@ -102,8 +102,8 @@ export default function Home() {
           className="min-h-[100vh] flex flex-col gap-16 pr-6 pl-6 py-32 border-b border-[#373636] border-opacity-60 font-space"
         >
           <h2 className="text-[2rem]">Projects</h2>
-          <div className="noirline flex flex-col lg:flex-row justify-between gap-20 md:gap-40 items-center">
-            <div className="info-area">
+          <div className="noirline grid grid-cols-1 md:grid-cols-5 gap-20 md:gap-40 items-center">
+            <div className="info-area md:col-span-3">
               <div className="project-header mb-16 flex flex-row items-end gap-12">
                 <h3 className="text-[1.5rem]">NOIRline</h3>
                 <div className="links flex flex-row gap-6">
@@ -142,7 +142,7 @@ export default function Home() {
                 <li className="border px-4 py-2">Next.js</li>
               </ul>
             </div>
-            <div className="video-area w-full flex justify-center lg:justify-end">
+            <div className="video-area w-full flex justify-center lg:justify-end md:col-span-2">
               <video
                 src="/videos/noirline-recording.mp4"
                 controls
@@ -153,8 +153,8 @@ export default function Home() {
               />
             </div>
           </div>
-          <div className="explora flex flex-col lg:flex-row justify-between gap-20 md:gap-40 items-center">
-            <div className="info-area ">
+          <div className="explora grid grid-cols-1 md:grid-cols-5 gap-20 md:gap-40 items-center">
+            <div className="info-area md:col-span-3">
               <div className="project-header mb-16 flex flex-row items-end gap-12">
                 <h3 className="text-[1.5rem]">Explora</h3>
                 <div className="links flex flex-row gap-6">
@@ -196,7 +196,7 @@ export default function Home() {
                 <li className="border px-4 py-2">Mongo DB</li>
               </ul>
             </div>
-            <div className="video-area w-full flex justify-center lg:justify-end">
+            <div className="video-area w-full flex justify-center lg:justify-end md:col-span-2">
               <video
                 src="/videos/explora-video.mp4"
                 controls
@@ -207,8 +207,8 @@ export default function Home() {
               />
             </div>
           </div>
-          <div className="explora flex flex-col lg:flex-row justify-between gap-20 md:gap-40 items-center">
-            <div className="info-area ">
+          <div className="explora grid grid-cols-1 md:grid-cols-5 gap-20 md:gap-40 items-center">
+            <div className="info-area md:col-span-3">
               <div className="project-header mb-16 flex flex-row items-end gap-12">
                 <h3 className="text-[1.5rem]">Meteoly</h3>
                 <div className="links flex flex-row gap-6">
@@ -251,11 +251,11 @@ export default function Home() {
                 <li className="border px-4 py-2">TailwindCSS</li>
               </ul>
             </div>
-            <div className="video-area w-full flex justify-center lg:justify-end">
+            <div className="video-area w-full flex justify-center lg:justify-end md:col-span-2">
               <video
                 src="/videos/meteoly-video.mp4"
                 controls
-                className="w-full max-w-[40rem] border-none outline-none"
+                className="w-full border-none outline-none"
                 autoPlay={true}
                 loop
                 muted
@@ -263,8 +263,8 @@ export default function Home() {
             </div>
           </div>
           <h2 className="text-[2rem] mt-24">Works</h2>
-          <div className="bubiwear flex flex-col lg:flex-row justify-between gap-20 md:gap-40 items-center">
-            <div className="info-area">
+          <div className="bubiwear grid grid-cols-1 md:grid-cols-5 gap-20 md:gap-40 items-center">
+            <div className="info-area md:col-span-3">
               <div className="project-header mb-16 flex flex-row items-end gap-12">
                 <h3 className="text-[1.5rem]">BubiWear</h3>
                 <div className="links flex flex-row gap-6">
@@ -305,7 +305,7 @@ export default function Home() {
                 <li className="border px-4 py-2">Mongo DB</li>
               </ul>
             </div>
-            <div className="video-area w-full flex justify-center lg:justify-end">
+            <div className="video-area w-full flex justify-center lg:justify-end md:col-span-2">
               <video
                 src="/videos/bubiwear-video.mp4"
                 controls
@@ -316,8 +316,8 @@ export default function Home() {
               />
             </div>
           </div>
-          <div className="mgdesign flex flex-col lg:flex-row justify-between gap-20 md:gap-40 items-center">
-            <div className="info-area">
+          <div className="mgdesign grid grid-cols-1 md:grid-cols-5 gap-20 md:gap-40 items-center">
+            <div className="info-area md:col-span-3">
               <h3 className="text-[1.5rem] mb-8">mgdesign</h3>
               <p>
                 mgdesign is a company showcase website that presents the
@@ -331,7 +331,7 @@ export default function Home() {
                 <li className="border px-4 py-2">HTML</li>
               </ul>
             </div>
-            <div className="video-area w-full flex justify-end">
+            <div className="vvideo-area w-full flex justify-center lg:justify-end md:col-span-2">
               <div>
                 <Image
                   src="/images/mg-design.png"
