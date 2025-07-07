@@ -381,7 +381,7 @@ export default function Home() {
                   The mgdesign website was developed through an iterative
                   process where design and development progressed hand in
                   hand.Several versions of the site were built in parallel with
-                  the design phase.Project did not finished.
+                  the design phase.
                 </p>
               </div>
               <div className="sampler-hamm-section flex flex-col gap-4 mb-16">
