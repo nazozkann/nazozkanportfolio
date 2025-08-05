@@ -15,7 +15,7 @@ export default function Home() {
           id="section-home"
           className="min-h-[calc(100vh-4.5rem)] flex flex-col items-left justify-center pr-6 pl-6 border-b border-[#373636] border-opacity-60 font-space"
         >
-          <h1 className="text-[3rem] mb-8">Full Stack Developer</h1>
+          <h1 className="text-[3rem] mb-8">Front End Developer</h1>
           <p className="md:w-[50%] w-[100%] text-[1.25rem]">
             I build interactive, aesthetic, and performant web experiences —
             combining a designer’s eye with an engineer’s mind.
@@ -374,19 +374,103 @@ export default function Home() {
           {activeTab === "experience" && (
             <div className="experience-info mb-32">
               <div className="mgdesign-section flex flex-col gap-4 mb-16">
+                <h3 className="text-[1.5rem] mb-4">Freelance</h3>
+                <p className="font-[600]">Full Stack Developer</p>
+                <p>2025 March - </p>
+                <p className="opacity-60">
+                  -Built and deployed full-stack web applications using the{" "}
+                  <span className="font-[600]">MERN </span>
+                  stack (MongoDB, Express.js, React.js, Node.js). <br />
+                  -Designed and implemented{" "}
+                  <span className="font-[600]">RESTful APIs</span> with Express
+                  and Node.js for seamless frontend-backend communication.{" "}
+                  <br />
+                  -Developed responsive and dynamic user interfaces using{" "}
+                  <span className="font-[600]">React</span>, React Hooks, and
+                  functional components. <br />
+                  -Utilized <span className="font-[600]">MongoDB</span> for
+                  schema design and efficient data modeling. -Handled
+                  authentication and authorization{" "}
+                  <span className="font-[600]">(JWT, OAuth)</span> for secure{" "}
+                  <br />
+                  user access control. -Integrated third-party services and APIs{" "}
+                  <br />
+                  -Deployed applications on cloud platforms like{" "}
+                  <span className="font-[600]">Vercel</span>,
+                  <span className="font-[600]">Netlify</span>, and{" "}
+                  <span className="font-[600]">Render</span>; used{" "}
+                  <span className="font-[600]">MongoDB Atlas</span> for cloud
+                  database hosting. <br />
+                  -Employed <span className="font-[600]">
+                    Git and GitHub
+                  </span>{" "}
+                  for version control, managing branches, pull requests, and
+                  code reviews. <br />
+                  -Worked with libraries and tools like{" "}
+                  <span className="font-[600]">Contect API</span>,{" "}
+                  <span className="font-[600]">React Query,</span>
+                  <span className="font-[600]">Tailwind CSS</span>,{" "}
+                  <span className="font-[600]">Mongoose</span>
+                </p>
+              </div>
+              <div className="mgdesign-section flex flex-col gap-4 mb-16">
+                <h3 className="text-[1.5rem] mb-4">yeksoftware</h3>
+                <p className="font-[600]">Front End Developer</p>
+                <p>2025 June - 2025 August</p>
+                <p className="opacity-60">
+                  -Developed responsive user interfaces by converting design
+                  into functional code using{" "}
+                  <span className="font-[600]">React & JavaScript</span> <br />
+                  -Integrated real-time chat functionality using{" "}
+                  <span className="font-[600]">Socket.io</span>, including room
+                  creation and messaging logic <br /> -Used{" "}
+                  <span className="font-[600]">Redux</span> for efficient state
+                  management across complex components. <br />
+                  -Collaborated with backend to consume and{" "}
+                  <span className="font-[600]">
+                    integrate APIs
+                  </span> effectively <br /> -Worked in an{" "}
+                  <span className="font-[600]">Agile environment</span>,
+                  actively participating in daily stand-ups, sprint planning,
+                  and regular retrospectives following the{" "}
+                  <span className="font-[600]">Scrum</span> methodology. <br />{" "}
+                  -Collaborated closely with cross-functional team members
+                  including backend developers, designers, and QA engineers to
+                  ensure smooth and efficient development processes.
+                </p>
+              </div>
+              <div className="mgdesign-section flex flex-col gap-4 mb-16">
                 <h3 className="text-[1.5rem] mb-4">mgdesign</h3>
-                <p>Web Developer</p>
+                <p className="font-[600]">Web Developer</p>
                 <p>2024 July - 2025 March</p>
                 <p className="opacity-60">
-                  The mgdesign website was developed through an iterative
-                  process where design and development progressed hand in
-                  hand.Several versions of the site were built in parallel with
-                  the design phase.
+                  -Developed a responsive company website using{" "}
+                  <span className="font-[600]">HTML</span>,{" "}
+                  <span className="font-[600]">CSS</span>, and vanilla{" "}
+                  <span className="font-[600]">JavaScript</span>,{" "}
+                  <span className="font-[600]">GSAP</span> fully tailored to
+                  evolving design requirements. <br />
+                  -Collaborated closely with stakeholders to deliver functional
+                  prototypes that visually reflected each iteration of the
+                  design process <br />
+                  -Translated creative ideas and sketches into live,{" "}
+                  <span className="font-[600]">interactive UI</span> components
+                  to help visualize product concepts in real-time. <br />-
+                  <span className="font-[600]">Built and deployed </span> the
+                  website to production, ensuring{" "}
+                  <span className="font-[600]">performance optimization</span>{" "}
+                  and{" "}
+                  <span className="font-[600]">
+                    cross-browser compatibility
+                  </span>
+                  . <br />
+                  -Delivered pixel-perfect implementations of design mockups,
+                  adapting quickly to ongoing visual feedback and revisions.
                 </p>
               </div>
               <div className="sampler-hamm-section flex flex-col gap-4 mb-16">
                 <h3 className="text-[1.5rem] mb-4">Sampler & Hamm Design</h3>
-                <p>Product Design Intern</p>
+                <p className="font-[600]">Product Design Intern</p>
                 <p>2024 March - June</p>
                 <p className="opacity-60">
                   In Sampler, worked on digital product designs including
@@ -397,7 +481,7 @@ export default function Home() {
               </div>
               <div className="bellatrix-section flex flex-col gap-4 mb-16">
                 <h3 className="text-[1.5rem] mb-4">Bellatrix Space Team</h3>
-                <p>Product Designe</p>
+                <p>Product Designer</p>
                 <p>2024 Jan - March</p>
                 <p className="opacity-60">
                   I was part of the first Turkish team accepted to NASA’s HERC
